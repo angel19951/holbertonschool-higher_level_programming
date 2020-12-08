@@ -7,4 +7,4 @@ for dec in range(0, 9):
             if dec == 8 and uni == 9:
                 print("{}{}".format(dec, uni))
                 break
-            print("{}{}, ".format(dec, uni), end=" ")
+            print("{}{},".format(dec, uni), end=" ")
