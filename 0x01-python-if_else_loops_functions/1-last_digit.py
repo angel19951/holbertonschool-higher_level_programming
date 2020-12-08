@@ -6,11 +6,11 @@ if number < 0:
     l = positive % 10
 else:
     l = number % 10
+
+print("Last digit of {} is ".format(number), end="")
 if l > 5:
-    print("Last digit of {:d} is {:d} and is greater than 5".format(number, l))
+    print("{} and is greater than 5".format(l))
 elif l == 0:
-    print("Last digit of {:d} is {:d} and is 0".format(number, l))
+    print("{} and is 0".format(l))
 elif l < 6 and l > 0:
-    print(("Last digit of {:d}"
-           " is {:d} and is "
-           "less than 6 and not".format(number, l)))
+    print(("{} and is less than 6 and not 0".format(l)))
