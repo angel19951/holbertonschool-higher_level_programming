@@ -18,8 +18,8 @@ if __name__ == "__main__":
     elif operation == "*":
         result = mul(fir_num, sec_num)
     elif operation == "/":
-        rersult = div(fir_num, sec_num)
+        result = div(fir_num, sec_num)
     else:
         print("Unkown operator. Avialable operators: +, -, * and /")
         exit(1)
-    print("{:d} {} {:d} = {:d}".format(fir_num, operation, sec_num, result))
+    print("{:d} {} {:d} = {}".format(fir_num, operation, sec_num, result))
