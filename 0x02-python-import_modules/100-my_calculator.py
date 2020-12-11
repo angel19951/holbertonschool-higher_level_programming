@@ -20,6 +20,6 @@ if __name__ == "__main__":
     elif operation == "/":
         result = div(fir_num, sec_num)
     else:
-        print("Unkown operator. Avialable operators: +, -, * and /")
+        print("Unknown operator. Only: +, -, * and / available")
         exit(1)
     print("{:d} {} {:d} = {}".format(fir_num, operation, sec_num, result))
