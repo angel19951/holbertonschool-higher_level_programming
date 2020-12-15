@@ -5,10 +5,10 @@ def element_at(my_list, idx):
         return None
     for r in my_list:
         count += 1
-    if idx > count:
+    if idx > count - 1:
         return None
-    for i in my_list:
+    for i in my_list[-1]:
         if i == idx:
-            element = my_list[i]
+            element = my_list
 
     return element
