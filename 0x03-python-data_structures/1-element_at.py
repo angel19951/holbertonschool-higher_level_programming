@@ -1,14 +1,11 @@
 #!/usr/bin/python3
 def element_at(my_list, idx):
-    count = 0
+    length = len(my_list)
     if idx < 0:
         return None
-    for r in my_list:
-        count += 1
-    if idx > count - 1:
+    if idx + 1 > length:
         return None
-    for i in my_list[-1]:
+    for i in my_list:
         if i == idx:
-            element = my_list
-
-    return element
+            element = my_list[idx]
+            return element
