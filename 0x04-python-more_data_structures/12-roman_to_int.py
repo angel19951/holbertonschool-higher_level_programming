@@ -8,6 +8,8 @@ def roman_to_int(roman_string):
     num = 0
     if not roman_string:
         return 0
+    if roman_string.isalpha() == False:
+        return 0
     while i < len(roman_string):
         if i + 1 < len(roman_string) and roman_string[i:i+2] in roman_s:
             num += roman_s[roman_string[i:i+2]]
