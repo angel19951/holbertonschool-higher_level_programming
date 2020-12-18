@@ -6,7 +6,7 @@ def roman_to_int(roman_string):
     roman_s = {"IV": 4, "IX": 9, "XL": 40, "XC": 90, "CD": 400, "CM": 900}
     i = 0
     num = 0
-    if not roman_string:
+    if roman_string is None:
         return 0
     for letter in roman_string:
         if letter not in "IVXLCDM":
