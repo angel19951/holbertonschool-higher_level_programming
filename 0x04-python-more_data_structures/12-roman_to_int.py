@@ -6,7 +6,7 @@ def roman_to_int(roman_string):
     roman_s = {"IV": 4, "IX": 9, "XL": 40, "XC": 90, "CD": 400, "CM": 900}
     i = 0
     num = 0
-    if len(roman_string) == 0:
+    if roman_string == '':
         return 0
     if roman_string.isalpha() is False:
         return 0
