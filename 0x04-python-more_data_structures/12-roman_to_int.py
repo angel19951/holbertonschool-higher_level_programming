@@ -9,7 +9,7 @@ def roman_to_int(roman_string):
     if roman_string is None:
         return 0
     for letter in roman_string:
-        if letter not in "IVXLCDM":
+        if letter not in "IVXLCDMIVIXXLXCCDCM":
             return 0
     while i < len(roman_string):
         if i + 1 < len(roman_string) and roman_string[i:i+2] in roman_s:
