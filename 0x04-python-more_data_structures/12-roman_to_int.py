@@ -8,8 +8,7 @@ def roman_to_int(roman_string):
     num = 0
     if roman_string is None:
         return 0
-    for letter in roman_string:
-        if letter not in "IVXLCDMIVIXXLXCCDCM":
+    if roman_string.isalpha() is False:
             return 0
     while i < len(roman_string):
         if i + 1 < len(roman_string) and roman_string[i:i+2] in roman_s:
