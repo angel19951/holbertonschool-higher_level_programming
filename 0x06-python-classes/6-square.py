@@ -43,6 +43,18 @@ class Square:
         else:
             self.__size = value
 
+    def my_print(self):
+        """
+        Prints to stdout a are square of the given size
+        """
+        if self.__size == 0:
+            print()
+        else:
+            print("\n" * self.__position[1], end="")
+            for row in range(0, self.__size):
+                print(" " * self.__position[0], end="")
+                print("#" * self.__size)
+
     @property
     def position(self):
         return self.__position
@@ -56,18 +68,6 @@ class Square:
         """
         if type(value) is not tuple or len(value) is not 2 or \
                 any(map(lambda i: type(i) is not int or i < 0, value)):
-            raise TypeError("position must be a tuple of 2 positive integer")
+            raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
-
-    def my_print(self):
-        """
-        Prints to stdout a are square of the given size
-        """
-        if self.__size == 0:
-            print()
-        else:
-            print("\n" * self.__position[1], end="")
-            for row in range(0, self.__size):
-                print(" " * self.__position[0], end="")
-                print("#" * self.__size)
