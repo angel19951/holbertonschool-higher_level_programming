@@ -54,10 +54,11 @@ class Square:
         and validates if is a tupler and >= 0
         value (tuple): position of the square, must be int
         """
-        if isinstance(value, tuple) is not True or value[0] < 0:
+        if type(value) is not tuple or len(value) is not 2 or \
+                any(map(lambda i: type(i) is not int or i < 0, value)):
             raise TypeError("position must be of 2 positive tuples")
-        elif value[1] < 0:
-            raise TypeError("position must be of 2 positibe tuples")
+        else:
+            self.__position = value
 
     def my_print(self):
         """
