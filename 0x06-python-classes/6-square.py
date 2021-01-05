@@ -48,12 +48,12 @@ class Square:
         return self.__position
 
     @position.setter
-    """
-    Defines the value of position
-    and validates if is a tuple and >= 0
-    value (tuple): position of the sqaure, must be int
-    """
     def position(self, value):
+        """
+        Defines the value of position
+        and validates if is a tupler and >= 0
+        value (tuple): position of the square, must be int
+        """
         if isinstance(value, tuple) is not True or value[0] < 0:
             raise TypeError("position must be of 2 positive tuples")
         elif value[1] < 0:
