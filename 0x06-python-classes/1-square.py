@@ -7,4 +7,4 @@ class Square:
         Args:
         size (int): size of the square
         """
-        self.__size=size #:giving attribute size a value
+        self.__size = size
