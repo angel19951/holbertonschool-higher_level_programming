@@ -20,7 +20,7 @@ class Square:
         """
         Return the multiplication of size by itself
         """
-        return int(self.__size) * int(self.__size)
+        return self.__size ** 2
 
     @property
     def size(self):
@@ -34,9 +34,9 @@ class Square:
         Attributes:
         value (int): size of the square, must be int
         """
-        if isinstance(value, int) is not True:
+        if type(value) is not int:
             raise TypeError("size must be an integer")
-        elif int(value) < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
         else:
-            self.__value = value
+            self.__size = value
