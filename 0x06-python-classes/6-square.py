@@ -47,11 +47,11 @@ class Square:
         """
         Prints to stdout a are square of the given size
         """
-        if self.__size == 0:
+        if self.__size is 0:
             print()
         else:
             print("\n" * self.__position[1], end="")
-            for row in range(0, self.__size):
+            for row in range(self.__size):
                 print(" " * self.__position[0], end="")
                 print("#" * self.__size)
 
@@ -66,7 +66,8 @@ class Square:
         and validates if is a tupler and >= 0
         value (tuple): position of the square, must be int
         """
-        if type(value) is not tuple or len(value) is not 2 or \
+        if type(value) is not tuple or \
+                len(value) is not 2 or \
                 any(map(lambda i: type(i) is not int or i < 0, value)):
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
