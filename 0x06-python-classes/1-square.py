@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+"""This module contains a square class with the attribute size"""
 class Square:
     """This is a square"""
 
