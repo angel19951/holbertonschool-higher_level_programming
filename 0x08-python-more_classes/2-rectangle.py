@@ -34,7 +34,7 @@ class Rectangle:
         Defines the value of width
         and validates if is an int and >= 0
         Attributes:
-        value (int): width of the rectangle
+        width_set (int): width of the rectangle
         """
         if type(width_set) is not int:
             raise TypeError("width must be an integer")
@@ -56,7 +56,7 @@ class Rectangle:
         Defines the value of height
         and validates if is an int and >= 0
         Attributes:
-        value (int): width of the rectangle
+        height_set (int): width of the rectangle
         """
         if type(height_set) is not int:
             raise TypeError("height must be an integer")
