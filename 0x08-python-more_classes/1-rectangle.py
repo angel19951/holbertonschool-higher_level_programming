@@ -24,6 +24,7 @@ class Rectangle:
         Returns width
         """
         return self.__width
+
     @width.setter
     def width(self, width_set):
         if type(width_set) is not int:
@@ -32,12 +33,14 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         else:
             self.__width = width_set
+
     @property
     def height(self):
         """
         Returns height
         """
         return self.__height
+
     @height.setter
     def height(self, height_set):
         if type(height_set) is not int:
