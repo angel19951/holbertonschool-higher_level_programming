@@ -27,6 +27,9 @@ class Rectangle:
 
     @width.setter
     def width(self, width_set):
+        """
+        Sets width validates entry
+        """
         if type(width_set) is not int:
             raise TypeError("width must be an integer")
         elif width_set < 0:
@@ -43,6 +46,9 @@ class Rectangle:
 
     @height.setter
     def height(self, height_set):
+        """
+        Sets height and validates entry
+        """
         if type(height_set) is not int:
             raise TypeError("height must be an integer")
         elif height_set < 0:
