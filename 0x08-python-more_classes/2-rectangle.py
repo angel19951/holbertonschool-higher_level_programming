@@ -27,6 +27,7 @@ class Rectangle:
         Returns width
         """
         return self.__width
+
     @width.setter
     def width(self, width_set):
         """
@@ -63,6 +64,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = height_set
+
     def area(self):
         """
         Returns the area of a rectangle
