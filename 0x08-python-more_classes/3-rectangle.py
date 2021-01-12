@@ -84,5 +84,6 @@ class Rectangle:
             return ("")
         else:
             rectangle = []
-            rectangle = "".join(("#" * self.width + '\n') * self.height)
+            rectangle = ("#" * self.width + '\n') * self.height
+            rectangle = rectangle[:-1]
             return rectangle
