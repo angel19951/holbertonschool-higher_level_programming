@@ -83,4 +83,6 @@ class Rectangle:
         if self.area is 0:
             return ("")
         else:
-            return ("#" * self.width + '\n') * self.height
+            rectangle = []
+            rectangle = "".join(("#" * self.width + '\n') * self.height)
+            return rectangle
