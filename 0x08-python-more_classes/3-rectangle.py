@@ -81,7 +81,7 @@ class Rectangle:
 
     def __str__(self):
         if self.area is 0:
-            return ("")
+            return ()
         else:
             rectangle = []
             rectangle = ("#" * self.width + '\n') * self.height
