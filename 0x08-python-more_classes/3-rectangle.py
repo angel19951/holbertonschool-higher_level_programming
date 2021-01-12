@@ -88,5 +88,5 @@ class Rectangle:
         else:
             rectangle = []
             rectangle = ("#" * self.width + '\n') * self.height
-
+            rectangle = rectangle[:-1]
             return rectangle
