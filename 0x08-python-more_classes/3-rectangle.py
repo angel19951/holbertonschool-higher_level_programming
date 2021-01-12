@@ -80,8 +80,11 @@ class Rectangle:
             return (int(self.width) * 2) + (int(self.height) * 2)
 
     def __str__(self):
+        """
+        Prints # in the area of a rectangle
+        """
         if self.area is 0:
-            return ()
+            return ""
         else:
             rectangle = []
             rectangle = ("#" * self.width + '\n') * self.height
