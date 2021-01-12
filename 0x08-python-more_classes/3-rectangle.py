@@ -83,7 +83,7 @@ class Rectangle:
         """
         Prints # in the area of a rectangle
         """
-        if self.area is 0:
+        if self.area == 0:
             return ""
         else:
             rectangle = []
