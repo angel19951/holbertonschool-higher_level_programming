@@ -86,7 +86,7 @@ class Rectangle:
         if self.area == 0:
             return ""
         else:
-            rectangle = []
+            rectangle = ""
             rectangle = ("#" * self.width + '\n') * self.height
             rectangle = rectangle[:-1]
             return rectangle
