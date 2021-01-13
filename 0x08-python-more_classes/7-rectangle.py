@@ -15,7 +15,8 @@ class Rectangle:
     Attributes:
     number_of_instance (int): counts the ammount of
     intances created
-    print_symbol (str_): used as symbol for string rep
+    print_symbol (str_): used as symbol for string representation of a
+    rectangle
     """
 
     number_of_instances = 0
@@ -98,7 +99,7 @@ class Rectangle:
             return ""
         else:
             rectangle = ""
-            rectangle = (Rectangle.print_symbol * self.width + '\n') * self.height
+            rectangle = (str(self.print_symbol) * self.width + '\n') * self.height
             rectangle = rectangle[:-1]
             return rectangle
 
