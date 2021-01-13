@@ -13,7 +13,7 @@ class Rectangle:
     """
     This is a Rectangle class
     Attributes:
-    number_of_instance (int): counts the ammount of 
+    number_of_instance (int): counts the ammount of
     intances created
     """
 
