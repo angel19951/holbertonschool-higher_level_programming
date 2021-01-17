@@ -76,13 +76,13 @@ Test 13 (Add 1 + 2 + 3 = Error):
     TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
 
 Test 14 OVERFLOW:
-    >>> add_integer(99992**98, 34**65)
+    >>> add_integer(99999999999999999999e2**98, 34**65)
     Traceback (most recent call last):
     ...
-    OverflowError: add_integer cannot conver float to integer
+    OverflowError: (34, 'Numerical result out of range')
 
 Test 15 NaN:
-    >>> add_integer(floar(NaN), 5)
+    >>> add_integer(float('NaN'), 5)
     Traceback (most recent call last):
     ...
     ValueError: cannot convert float NaN to integer
