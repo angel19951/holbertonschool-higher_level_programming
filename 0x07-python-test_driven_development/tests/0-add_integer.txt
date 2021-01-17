@@ -1,0 +1,77 @@
+Test file for 0-add_integer
+Adds and validates two integers
+raising Errors if fail
+
+
+Adding module:
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+
+--------OUTPUT TESTS---------
+
+Test 1 (Add 10 + 15 = 25):
+    >>> add_integer(10, 15)
+    25
+
+Test 2 (Add -15 + -10 = -25):
+    >>> add_integer(-15, -10)
+    -25
+
+Test 3 (Add 0 + 0 = 0):
+    >>> add_integer(0, 0)
+    0
+
+Test 4 (Add 10.2 + 11.3 = 21):
+    >>> add_integer(10.2, 11.3)
+    21
+
+Test 5 (Add -10.2 + -11.3 = -21):
+    >>> add_integer(-10.2, -11.3)
+    -21
+
+Test 6 b=98 (Add 2 + b = 100):
+    >>> add_integer(2,)
+    100
+
+Test 7 b=98 (Add -9 + b = 81):
+    >>> add_integer(-9,)
+    89
+
+------ERROR TESTS-----------
+
+Test 8 (Add "SUM" + 20 = Error):
+    >>> add_integer("SUM", 20)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+Test 9 (Add 20 + "SUM" = Error):
+    >>> add_integer(20, "SUM")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+Test 10 b=98 (Add None + b = Error):
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+Test 11 (Add 100 + None = Error):
+    >>> add_integer(100, None)
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+Test 12 (Add Nothing):
+    >>> add_integer()
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Test 13 (Add 1 + 2 + 3 = Error):
+    >>> add_integer(1, 2, 3)
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
