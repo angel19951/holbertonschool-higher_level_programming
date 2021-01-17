@@ -1,4 +1,4 @@
-#!/usr/bion/python3
+#!/usr/bin/python3
 """
 This module prints a name compused of "First" and "Last" name
 both will be validated of error will be raised
