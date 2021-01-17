@@ -81,6 +81,12 @@ Test 14 OVERFLOW:
     ...
     OverflowError: (34, 'Numerical result out of range')
 
+Test 15 floar OVERFLOW:
+    >>> add_integer(float('inf'),float('inf'))
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
+
 Test 15 NaN:
     >>> add_integer(float('NaN'), 5)
     Traceback (most recent call last):
