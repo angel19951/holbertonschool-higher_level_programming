@@ -5,11 +5,11 @@ This module appends to a .txt file
 
 
 def append_write(filename="", text=""):
+    """
+    Appends a string to an .txt file
+    Args:
+    filename (str): name of the file to append to
+    text (str): text to append to file
+    """
     with open(filename, 'a', encoding='UTF8') as f:
-        f.write(text)
-<<<<<<< HEAD
-
-    return len(text)
-=======
-        return len(text)
->>>>>>> 5c1640c56508c1d2a5d3b82837ca0f00e1b0c850
+        return f.write(text)
