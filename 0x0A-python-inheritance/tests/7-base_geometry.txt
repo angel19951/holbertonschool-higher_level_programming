@@ -1,0 +1,64 @@
+This test file is for 7-base_geometry module
+class that raises type errors and validate entrys
+
+
+Import module:
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+---------ENTRY OUTPUT TESTS-----------
+
+Assignning class to variable
+    >>> bg = BaseGeometry()
+
+Test 1 ("derp", 3):
+    >>> bg.integer_validator("derp", 3)
+
+Test 2 ("wow", 5990):
+    >>> bg.integer_validator("wow", 5990)
+
+Test 3 ("", 4):
+    >>> bg.integer_validator("", 4)
+
+--------------ERROR TESTS---------------
+
+Test 4 ("cool", ):
+    >>> bg.integer_validator("cool",)
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+Test 5 (, 6):
+    >>> bg.integer_validator( , 6)
+    Traceback (most recent call last):
+    ...
+    SyntaxError: invalid syntax
+
+Test 6 ():
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+Test 7 ("help", 0):
+    >>> bg.integer_validator("help", 0)
+    Traceback (most recent call last):
+    ...
+    ValueError: help must be greater than 0
+
+Test 8 ("help2", -2):
+    >>> bg.integer_validator("help2", -2)
+    Traceback (most recent call last): 
+    ...
+    ValueError: help2 must be greater than 0
+
+Test 9 ("Smith", "Will"):
+    >>> bg.integer_validator("Smith", "Will")
+    Traceback (most recent call last):
+    ...
+    TypeError: Smith must be an integer
+
+Test 10 ("float", 1.2):
+    >>> bg.integer_validator("float", 1.2)
+    Traceback (most recent call last):
+    ...
+    TypeError: float must be an integer
