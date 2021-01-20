@@ -13,10 +13,10 @@ class MyInt(int):
         """
         Changes == to !=
         """
-        return int(str(self)) != value
+        return super().__isint__(value)
 
     def __isint__(self, value):
         """
         Change != to ==
         """
-        return int(str(self)) == value
+        return super().__isnot__(value)
