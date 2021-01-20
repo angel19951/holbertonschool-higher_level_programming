@@ -7,6 +7,7 @@ and validates the entries
 
 bg = __import__('7-base_geometry').BaseGeometry
 
+
 class Rectangle(bg):
     """
     Rectangle class that inherits from BaseGeometry
