@@ -11,6 +11,5 @@ def to_json_string(my_obj):
     """
     import json
 
-
     new_obj = json.dumps(my_obj)
     return new_obj
