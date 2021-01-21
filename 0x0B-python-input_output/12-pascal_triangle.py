@@ -10,7 +10,7 @@ def pascal_triangle(n):
     Returns list of list rep of Pascal's triangle
     """
     if n <= 0:
-        triangle = [[]]
+        triangle = []
         return triangle
 
     triangle = [[1]]
