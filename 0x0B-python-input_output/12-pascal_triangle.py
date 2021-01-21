@@ -12,9 +12,9 @@ def pascal_triangle(n):
     triangle = [[1]]
 
     for count in range(1, n):
-        tri = [1]
+        t = [1]
         for move in range(1, count):
-            tri.append(triangle[count - 1][move - 1] + triangle[count - 1][move])
-        tri.append(1)
-        triangle.append(tri)
+            t.append(triangle[count - 1][move - 1] + triangle[count - 1][move])
+        t.append(1)
+        triangle.append(t)
     return triangle
