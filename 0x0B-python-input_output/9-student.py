@@ -26,5 +26,3 @@ class Student:
         Returns dict with simple data struct
         """
         return self.__dict__
-
-
