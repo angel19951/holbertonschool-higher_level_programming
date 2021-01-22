@@ -44,5 +44,5 @@ class Student:
         """
         Reloads a JSON file
         """
-        for arg in json:
-            self.__dict__[arg] = json[arg]
+        for arg, key in sorted(json.items()):
+            self.__dict__[arg] = key
