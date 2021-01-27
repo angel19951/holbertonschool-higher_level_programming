@@ -149,6 +149,10 @@ class Rectangle(Base):
                 print()
 
     def update(self, *args, **kwargs):
+        """
+        Updates the values inside the rectangle
+        using args
+        """
         if len(args):
             for arg, value in enumerate(args):
                 if arg == 0:
