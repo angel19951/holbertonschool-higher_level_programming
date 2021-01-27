@@ -120,7 +120,7 @@ class Rectangle(Base):
         value (int): y position of the rectangle
         """
         if type(value) is not int:
-            raise TypeError("y must be an int")
+            raise TypeError("y must be an integer")
         elif value < 0:
             raise ValueError("y must be >= 0")
         else:
