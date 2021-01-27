@@ -19,7 +19,7 @@ class Square(Rectangle):
         y (int): position in y axis of the square
         """
         self.size = size
-        super().__init__(size, size, x, y)
+        super().__init__(size, size, x, y, id)
 
     def __str__(self):
         """
