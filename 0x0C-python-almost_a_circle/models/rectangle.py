@@ -9,6 +9,12 @@ from models.base import Base
 class Rectangle(Base):
     """
     This is a Rectangle class
+    Args:
+    width (int): width of the rectangle
+    height (int): height of the rectangle
+    x (int): position of the rectangle x axis
+    y (int): position of the rectangle y axis
+    id (int): is number for class inherited
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
