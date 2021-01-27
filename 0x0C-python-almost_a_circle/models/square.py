@@ -67,6 +67,9 @@ class Square(Rectangle):
             print()
 
     def update(self, *args, **kwargs):
+        """
+        Updates the value of the square using args
+        """
         if len(args):
             for key, arg in enumerate(args):
                 if arg == 0:
