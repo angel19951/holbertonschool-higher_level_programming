@@ -4,6 +4,7 @@ This module contains a Square class
 """
 
 from models.rectangle import Rectangle
+from models.base import Base
 
 
 class Square(Rectangle):
@@ -32,7 +33,7 @@ class Square(Rectangle):
         """
         Returns size of the square
         """
-        return self.__size
+        return self.width
 
     @size.setter
     def size(self, value):
@@ -44,7 +45,7 @@ class Square(Rectangle):
         elif value < 0:
             raise ValueError("width must be >= 0")
         else:
-            self.__size = value
+            self.width = value
 
     def area(self):
         """
