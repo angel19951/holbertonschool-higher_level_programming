@@ -3,7 +3,7 @@
 This module containes a class name Rectangle
 and attributes width, height, x and y
 """
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
