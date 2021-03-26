@@ -1,4 +1,4 @@
-#!/us/bin/node
+#!/usr/bin/node
 
 const Rectangle = require('./5-square');
 
