@@ -15,8 +15,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    for item in session.query(State).filter(State.name==sys.argv[4])\
-    .order_by(State.id):
+    for item in session.query(State).filter(State.name == sys.argv[4])\
+            .order_by(State.id):
         if item:
             print('{}'.format(item.id))
             found = 1
