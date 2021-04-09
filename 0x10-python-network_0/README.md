@@ -41,16 +41,16 @@ Learning and using the curl command for better curl understanding.
 
 ## Tasks:
  - Task 0. cURL body size
-   - [Task 0]()
+   - [Task 0](https://github.com/angel19951/holbertonschool-higher_level_programming/blob/main/0x10-python-network_0/0-body_size.sh)
  - Task 1. cURL to the end
-   - [Task 1]()
+   - [Task 1](https://github.com/angel19951/holbertonschool-higher_level_programming/blob/main/0x10-python-network_0/1-body.sh)
  - Task 2. cURL Method
-   - [Task 2]()
+   - [Task 2](https://github.com/angel19951/holbertonschool-higher_level_programming/blob/main/0x10-python-network_0/2-delete.sh)
  - Task 3. cURL only methods 
-   - [Task 3]()
+   - [Task 3](https://github.com/angel19951/holbertonschool-higher_level_programming/blob/main/0x10-python-network_0/3-methods.sh)
  - Task 4. cURL headers
-   - [Task 4]()
+   - [Task 4](https://github.com/angel19951/holbertonschool-higher_level_programming/blob/main/0x10-python-network_0/4-header.sh)
  - Task 5. cURL POST parameters 
-   - [Task 5]()
+   - [Task 5](https://github.com/angel19951/holbertonschool-higher_level_programming/blob/main/0x10-python-network_0/5-post_params.sh)
  - Task 6. Find a peak 
    - [Task 6]()
